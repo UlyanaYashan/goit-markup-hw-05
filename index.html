@@ -53,7 +53,7 @@
       <section class="hero">
       <div class="conteiner">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-btn" type="button">
+        <button data-modal-open class="hero-btn" type="button">
         Замовити послугу
         </button>
         </div>
@@ -117,25 +117,34 @@
         <h2 class="list">Чим ми займаємося</h2>
         <ul class="list-items">
           <li class="list-item">
-            <img class="box-no-gap"
+            <div class="thumb-label">
+              <img class="box-no-gap"
               src="./images/box1.jpg"
               alt="робочий стіл з компютером"
               width="370"
             />
+              <p class="label">десктопні додатки</p>
+            </div>
           </li>
           <li class="list-item">
-            <img class="box-no-gap"
+            <div class="thumb-label">
+              <img class="box-no-gap"
               src="./images/box2.jpg"
               alt="робоча зона з компютером і телефоном"
               width="370"
             />
+            <p class="label">Мобільні додатки</p>
+            </div>
           </li>
           <li class="list-item">
-            <img class="box-no-gap"
+            <div class="thumb-label">
+              <img class="box-no-gap"
               src="./images/box3.jpg"
               alt="робоча зона з компютером і планшетом"
               width="370"
             />
+              <p class="label">Дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -424,5 +433,15 @@
       </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="background-modal">
+        <button data-modal-close class="btn-modal">
+          <svg class="icon-modal" width="30px" height="30px">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
